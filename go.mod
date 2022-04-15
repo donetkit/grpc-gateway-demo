@@ -3,6 +3,7 @@ module grpc-gateway-demo
 go 1.16
 
 require (
+	github.com/donetkit/googleapis v0.0.0-20220415075058-c10cd7222356 // indirect
 	github.com/felixge/httpsnoop v1.0.2
 	github.com/gin-gonic/gin v1.7.7
 	github.com/gogo/protobuf v1.3.2 // indirect
@@ -16,3 +17,7 @@ require (
 	google.golang.org/grpc v1.43.0
 	google.golang.org/protobuf v1.28.0 // indirect
 )
+
+//replace (
+//	source latest => target latest
+//)
