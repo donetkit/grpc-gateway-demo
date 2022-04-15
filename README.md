@@ -10,6 +10,10 @@ file://C:/Users/Microfoft/go/src/donetkit/googleapis
 <img src="2022-04-15_16-11-11.png">
 
 
+
+C:\Users\Microfoft\go\pkg\mod\github.com\golang\protobuf@v1.5.2\protoc-gen-go
+
+
 ### protoc
 
 ```
