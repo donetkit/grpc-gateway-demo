@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/anshulrgoyal/grpc-gateway-demo;grpc_gateway_demo";
+option go_package = "gen/go/hello;grpc_gateway_demo";
 
 
 import "google/api/annotations.proto";
@@ -25,39 +25,3 @@ service Greeter {
     };
   }
 }
-
-/*
-
-protoc --proto_path=. --go_out=. proto/hello/hello_world.proto
-
-
-protoc -I=$GOPATH/src --gogo_out=plugins=Mgoogle/api/annotations.proto=github.com/gogo/googleapis/google/api:. proto/hello/hello_world.proto
-
-protoc -I $GOPATH/src/google/api --go_out=. ./proto/hello/hello_world.proto
-
-protoc -I ./ -I $GOPATH/src -I $GOPATH/src/google/api --proto_path=. --go_out=. proto/hello/hello_world.proto
-
-protoc -I ./ -I $GOPATH/src -I $GOPATH/src/google/api --proto_path=. --go_out=. proto/hello/hello_world.proto
-
-protoc -I $GOPATH/src --proto_path=. --go_out=. proto/hello/hello_world.proto
-
-
-protoc -I=$GOPATH/src --proto_path=. --go_out=. proto/hello/hello_world.proto
-
-protoc -I C:\Users\Microfoft\go\src --gogo_out=plugins=google/api/annotations.proto=github.com/gogo/googleapis/google/api:. ./proto/hello/hello_world.proto
-
-
-
-
-protoc -I C://Users//Microfoft//go//src//google//api --proto_path=. --go_out=. proto/hello/hello_world.proto
-
-
-
-https://github.com/googleapis/googleapis/tree/master/google/api
-
-protoc -I C://Users//Microfoft//go//src -I C://Users//Microfoft//go//src//googleapis --go_out=google/api/annotations.proto=github.com/googleapis/googleapis/tree/master/google/api,plugins=grpc:. proto/hello/hello_world.proto
-
-
-
-
-*/
